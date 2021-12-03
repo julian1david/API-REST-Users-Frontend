@@ -1,0 +1,60 @@
+//archivoo List Item
+ <li onClick={ () => 
+        { 
+            props.handleChild(props.item)
+        }
+        }>
+<div className="list-item">
+        {/* | likes {likes */}
+                <div className="list-item-logo">
+                    <button onClick={()=>{setLikes(likes +1)}}> Likes</button>
+                </div>
+            </div>
+            <div className="list-item-body"><b>{props.item.name} {/* | likes {likes */}</b></div>
+            <div>{props.item.phone}</div>
+            <div>{props.item.address}</div>
+
+/////////////////////////////////
+index App
+
+
+
+import jsonprofessors from '../Data/jsonprofessors';
+import jsontutors from '../Data/jsontutors';
+import jsonstudents from '../Data/jsonstudents';
+
+const [loaded, setLoaded] = useState(true)
+const [address, setAddress] = useState('')
+//Ejemplo de componente no controlador 
+var inputPhone = useRef('')
+
+const handleChild = (item) => {
+    setAddress(item.address)
+  }
+
+const handleForm = (e) => {
+    e.preventDefault(); //prevent a page refresh
+    setLoaded(false);
+
+    const target = e.target
+    let fullname = `${target.fname.value} ${target.sname.value} ${target.lname.value}`
+    data.push({
+      "id" : data.length+1,
+      "name": fullname,
+      "address": target.address.value,
+      "phone": target.phone.value
+    })
+    setData(data)
+    e.target.reset()
+    setTimeout(() => {
+      setLoaded(true)
+    }, 3000)
+
+  }
+
+  <List list={data} handleChild={handleChild} />
+
+          //setData(students)
+          //setData(professors)
+          //setData(tutors)
+

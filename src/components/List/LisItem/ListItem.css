@@ -1,0 +1,40 @@
+li {
+    border: 3px solid rgba(238, 238, 238, 0.4);
+    border-radius: 7px;
+    margin: 3px;
+    padding: 4px;
+    text-align: left;
+}
+
+li:hover{
+    border: 3px solid #eee;
+    background-color: rgba(46, 46, 46, 0.185);
+    cursor: pointer;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.list-item-logo img{
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}   
+.list-item-logo .btn{
+    background-color: #fff;
+    border: 1px solid #CCC;
+}
+.list-item-body {
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+.list-item-body p{  
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-item-body .name{
+    font-weight: bold;
+}

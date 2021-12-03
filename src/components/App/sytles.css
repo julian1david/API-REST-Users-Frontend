@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #2596be;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App input{
+  margin-top: 15px;
+  width: 80%;
+}
+
+.App .btn{
+  margin: 5px;
+}
+
+.App-buttons{
+  background-color: #2596be;
+  border-bottom: 3px solid #61dafb;
+}
+
+.App-buttons button{
+  background-color: #2596be;
+  border: 1px solid #2596be;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.App-buttons button:hover{
+  background-color: #ccc;
+  color: black;
+  cursor: pointer;
+}
+
+form{
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin: 34px;
+  text-align: center;
+}
+
+form input{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: 90%;
+}
+
+form select{
+    margin-top: 20px;
+    width: 82%;
+    border: 2px solid #ccc;
+    padding: 8px; 
+    border-radius: 5px;
+    max-height: 200px;
+  
+}
+form .btn-group{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form .btn-group button{
+  align-items: center;
+  justify-content: center;
+  background-color: #2596be;
+  font-size: 15px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  color: white;
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: calc(200px - 2%);
+}
